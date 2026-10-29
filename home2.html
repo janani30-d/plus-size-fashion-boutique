@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover stylish, inclusive plus-size fashion at Curve & Co."
+    >
+
+    <title>Curve & Co. | Plus-Size Fashion Boutique</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="curve-header" id="curveHeader">
+
+        <div class="curve-header-container">
+
+            <!-- LOGO - LEFT -->
+
+            <a
+                href="index.html"
+                class="curve-logo"
+                aria-label="Curve & Co. Home"
+            >
+                <img
+                    src="images/logo.png"
+                    alt="Curve & Co. Plus-Size Fashion Boutique"
+                    class="curve-logo-img"
+                >
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION - CENTER -->
+
+            <nav
+                class="curve-desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <ul class="curve-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+
+                    <li class="curve-nav-item curve-home-dropdown">
+
+                        <button
+                            type="button"
+                            class="curve-nav-link curve-home-toggle active"
+                            aria-expanded="false"
+                            aria-controls="curveHomeDropdown"
+                        >
+                            <span>Home</span>
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+
+                        <ul
+                            class="curve-dropdown-menu"
+                            id="curveHomeDropdown"
+                        >
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home2.html"class="active">Home 2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="curve-nav-item">
+                        <a href="about.html" class="curve-nav-link">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <!-- SHOP -->
+
+                    <li class="curve-nav-item">
+                        <a href="shop.html" class="curve-nav-link">
+                            Shop
+                        </a>
+                    </li>
+
+
+                    <!-- STYLE GUIDE -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="style-guide.html"
+                            class="curve-nav-link"
+                        >
+                            Style Guide
+                        </a>
+                    </li>
+
+
+                    <!-- FIT GUARANTEE -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="fit-guarantee.html"
+                            class="curve-nav-link"
+                        >
+                            Fit Guarantee
+                        </a>
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="contact.html"
+                            class="curve-nav-link"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- DESKTOP ACTIONS - RIGHT -->
+
+            <div class="curve-header-actions">
+
+                <!-- RTL BUTTON -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-rtl-toggle"
+                    data-curve-rtl
+                    aria-label="Toggle right-to-left layout"
+                    aria-pressed="false"
+                    title="Toggle RTL"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path d="M4 8h15"/>
+                        <path d="m15 4 4 4-4 4"/>
+                        <path d="M20 16H5"/>
+                        <path d="m9 12-4 4 4 4"/>
+                    </svg>
+                </button>
+
+
+                <!-- DARK MODE BUTTON -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-theme-toggle"
+                    data-curve-theme
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark mode"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                            8.5 8.5 0 1 0 20.5 15.5Z"
+                        />
+                    </svg>
+                </button>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <a href="login.html" class="curve-login-btn">
+                    Login
+                </a>
+
+            </div>
+
+
+            <!-- HAMBURGER BUTTON -->
+
+            <button
+                type="button"
+                class="curve-menu-toggle"
+                id="curveMenuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="curveMobilePanel"
+            >
+
+                <!-- MENU ICON -->
+
+                <svg
+                    class="curve-menu-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M4 6h16"/>
+                    <path d="M4 12h16"/>
+                    <path d="M4 18h16"/>
+                </svg>
+
+                <!-- CLOSE ICON -->
+
+                <svg
+                    class="curve-close-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="m6 6 12 12"/>
+                    <path d="M18 6 6 18"/>
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             RESPONSIVE HAMBURGER PANEL
+        ====================================== -->
+
+        <div
+            class="curve-mobile-panel"
+            id="curveMobilePanel"
+            aria-hidden="true"
+            inert
+        >
+
+            <!-- MOBILE NAVIGATION -->
+
+            <nav
+                class="curve-mobile-nav"
+                aria-label="Responsive navigation"
+            >
+
+                <ul class="curve-mobile-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+
+                    <li class="curve-mobile-nav-item curve-mobile-home">
+
+                        <button
+                            type="button"
+                            class="curve-mobile-link curve-mobile-home-toggle active"
+                            aria-expanded="false"
+                            aria-controls="curveMobileHomeDropdown"
+                        >
+                            <span>Home</span>
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+
+                        <ul
+                            class="curve-mobile-dropdown"
+                            id="curveMobileHomeDropdown"
+                            hidden
+                        >
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home2.html"class="active">Home 2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="curve-mobile-nav-item">
+                        <a href="about.html" class="curve-mobile-link">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <!-- SHOP -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a href="shop.html" class="curve-mobile-link">
+                            Shop
+                        </a>
+                    </li>
+
+
+                    <!-- STYLE GUIDE -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="style-guide.html"
+                            class="curve-mobile-link"
+                        >
+                            Style Guide
+                        </a>
+                    </li>
+
+
+                    <!-- FIT GUARANTEE -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="fit-guarantee.html"
+                            class="curve-mobile-link"
+                        >
+                            Fit Guarantee
+                        </a>
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="contact.html"
+                            class="curve-mobile-link"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MOBILE ACTION BUTTONS -->
+
+            <div class="curve-mobile-actions">
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-rtl-toggle"
+                    data-curve-rtl
+                    aria-label="Toggle right-to-left layout"
+                    aria-pressed="false"
+                    title="Toggle RTL"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 8h15"/>
+                        <path d="m15 4 4 4-4 4"/>
+                        <path d="M20 16H5"/>
+                        <path d="m9 12-4 4 4 4"/>
+                    </svg>
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-theme-toggle"
+                    data-curve-theme
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark mode"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                            8.5 8.5 0 1 0 20.5 15.5Z"
+                        />
+                    </svg>
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <a href="login.html" class="curve-login-btn">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         PAGE CONTENT
+    ====================================== -->
+
+    <main id="mainContent">
+<section class="cc-home2-hero" id="ccHome2Hero">
+    <div class="cc-home2-hero-container">
+
+        <div class="cc-home2-hero-content">
+            <span class="cc-home2-hero-eyebrow">
+                STYLE THAT CELEBRATES YOU
+            </span>
+
+            <h1 class="cc-home2-hero-title">
+                Fashion Made for
+                <span>Every Curve.</span>
+            </h1>
+
+            <p class="cc-home2-hero-description">
+                Discover flattering silhouettes, beautiful details,
+                and styles that feel like you.
+            </p>
+
+            <div class="cc-home2-hero-actions">
+                <a href="shop.html"
+                   class="cc-btn-primary cc-home2-hero-primary">
+                    Shop Now
+                </a>
+
+                <a href="shop.html"
+                   class="cc-btn-secondary cc-home2-hero-secondary">
+                    Explore Styles
+                </a>
+            </div>
+        </div>
+
+        <div class="cc-home2-hero-image">
+            <img
+                src="images/home2-hero.jpg"
+                alt="Plus-size fashion collection from Curve & Co."
+                fetchpriority="high"
+                width="700"
+                height="850"
+            >
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================
+     HOME 2 — OUR STORY SECTION
+========================================= -->
+
+<section class="cc-home2-story" id="ccHome2Story">
+
+    <div class="cc-home2-story-container">
+
+        <!-- STORY IMAGE -->
+        <div class="cc-home2-story-image">
+            <img
+                src="images/home2-our-story.jpg"
+                alt="Curve & Co. plus-size fashion collection"
+                loading="lazy"
+                width="650"
+                height="750"
+            >
+        </div>
+
+        <!-- STORY CONTENT -->
+        <div class="cc-home2-story-content">
+
+            <span class="cc-home2-story-eyebrow">
+                OUR STORY
+            </span>
+
+            <h2 class="cc-home2-story-title">
+                Fashion Should
+                <span>Feel Like You.</span>
+            </h2>
+
+            <p class="cc-home2-story-description">
+                At Curve & Co., we believe great style has no size limit.
+                Every piece is thoughtfully chosen to celebrate your shape,
+                express your personality, and help you feel confident
+                wherever life takes you.
+            </p>
+
+            <p class="cc-home2-story-description">
+                From everyday essentials to statement-making outfits,
+                discover styles designed to make you feel comfortable,
+                beautiful, and completely yourself.
+            </p>
+
+            <!-- STORY HIGHLIGHTS -->
+            <div class="cc-home2-story-highlights">
+
+                <div class="cc-home2-story-highlight">
+                    <span class="cc-home2-story-highlight-number">
+                        01
+                    </span>
+
+                    <div class="cc-home2-story-highlight-content">
+                        <h3>Made for Every Curve</h3>
+                        <p>
+                            Styles chosen with comfort and confidence in mind.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cc-home2-story-highlight">
+                    <span class="cc-home2-story-highlight-number">
+                        02
+                    </span>
+
+                    <div class="cc-home2-story-highlight-content">
+                        <h3>Style Without Limits</h3>
+                        <p>
+                            Fashion that celebrates your individuality.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- STORY BUTTON -->
+            <div class="cc-home2-story-actions">
+                <a href="about.html" class="cc-btn-primary">
+                    Discover Our Story
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- HOME 2 — SHOP BY CATEGORY -->
+<section class="cc-home2-categories" id="ccHome2Categories">
+
+    <div class="cc-home2-categories-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-home2-categories-header">
+            <span class="cc-home2-categories-eyebrow">
+                EXPLORE OUR COLLECTION
+            </span>
+
+            <h2 class="cc-home2-categories-title">
+                Shop by Category
+            </h2>
+
+            <p class="cc-home2-categories-description">
+                Find your next favourite look with styles made for you.
+            </p>
+        </div>
+
+        <!-- CATEGORY GRID -->
+        <div class="cc-home2-categories-grid">
+
+            <!-- DRESSES -->
+            <a href="shop.html?category=dresses"
+               class="cc-home2-category-card">
+                <div class="cc-home2-category-image">
+                    <img src="images/category-1.jpg"
+                         alt="Plus-size dresses"
+                         loading="lazy"
+                         width="600"
+                         height="750">
+                </div>
+                <div class="cc-home2-category-content">
+                    <h3>Dresses</h3>
+                    <span>Explore Dresses &rarr;</span>
+                </div>
+            </a>
+
+            <!-- TOPS & BLOUSES -->
+            <a href="shop.html?category=tops"
+               class="cc-home2-category-card">
+                <div class="cc-home2-category-image">
+                    <img src="images/category-2.jpg"
+                         alt="Plus-size tops and blouses"
+                         loading="lazy"
+                         width="600"
+                         height="750">
+                </div>
+                <div class="cc-home2-category-content">
+                    <h3>Tops &amp; Blouses</h3>
+                    <span>Explore Tops &rarr;</span>
+                </div>
+            </a>
+
+            <!-- JEANS & TROUSERS -->
+            <a href="shop.html?category=bottoms"
+               class="cc-home2-category-card">
+                <div class="cc-home2-category-image">
+                    <img src="images/category-3.jpg"
+                         alt="Plus-size jeans and trousers"
+                         loading="lazy"
+                         width="600"
+                         height="750">
+                </div>
+                <div class="cc-home2-category-content">
+                    <h3>Jeans &amp; Trousers</h3>
+                    <span>Explore Bottoms &rarr;</span>
+                </div>
+            </a>
+
+            <!-- CO-ORD SETS -->
+            <a href="shop.html?category=coords"
+               class="cc-home2-category-card">
+                <div class="cc-home2-category-image">
+                    <img src="images/category-4.jpg"
+                         alt="Plus-size matching co-ord sets"
+                         loading="lazy"
+                         width="600"
+                         height="750">
+                </div>
+                <div class="cc-home2-category-content">
+                    <h3>Co-ord Sets</h3>
+                    <span>Explore Co-ords &rarr;</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     HOME 2 — SECTION 4: THE CURVE EDIT
+========================================= -->
+
+
+<!-- ==========================================
+     CURVE & CO. — THE CURVE EDIT
+     Editorial Magazine Layout
+=========================================== -->
+<section class="cc-home2-edit" id="ccHome2Edit">
+
+    <div class="cc-home2-edit-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-home2-edit-header">
+
+            <div class="cc-home2-edit-heading">
+
+                <span class="cc-home2-edit-eyebrow">
+                    CURATED FOR YOU
+                </span>
+
+                <h2 class="cc-home2-edit-title">
+                    The Curve <span>Edit.</span>
+                </h2>
+
+                <p class="cc-home2-edit-description">
+                    Thoughtfully chosen pieces for every version of you.
+                </p>
+
+            </div>
+
+            <a href="shop.html" class="cc-home2-edit-view-all">
+                Explore All Collections
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+
+        <!-- FEATURED OCCASION EDIT -->
+        <article class="cc-home2-edit-featured">
+
+            <a
+                href="shop.html?collection=occasion"
+                class="cc-home2-edit-featured-image"
+                aria-label="Explore the Occasion Edit"
+            >
+                <img
+                    src="images/home2-edit-occasion.jpg"
+                    alt="Elegant plus-size occasion wear"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                >
+            </a>
+
+            <div class="cc-home2-edit-featured-number" aria-hidden="true">
+                01
+            </div>
+
+            <div class="cc-home2-edit-featured-content">
+
+                <span class="cc-home2-edit-label">
+                    THE STATEMENT COLLECTION
+                </span>
+
+                <h3 class="cc-home2-edit-card-title">
+                    The Occasion
+                    <span>Edit</span>
+                </h3>
+
+                <p class="cc-home2-edit-card-description">
+                    Standout silhouettes and beautiful details
+                    for moments worth remembering.
+                </p>
+
+                <a
+                    href="shop.html?collection=occasion"
+                    class="cc-home2-edit-link"
+                >
+                    Discover the Collection
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+            </div>
+
+            <span class="cc-home2-edit-featured-caption">
+                DRESS FOR YOUR MOMENT
+            </span>
+
+        </article>
+
+
+        <!-- SECONDARY COLLECTIONS -->
+        <div class="cc-home2-edit-grid">
+
+            <!-- EVERYDAY COLLECTION -->
+            <article class="cc-home2-edit-card">
+
+                <a
+                    href="shop.html?collection=everyday"
+                    class="cc-home2-edit-card-image"
+                    aria-label="Explore Everyday Icons"
+                >
+                    <img
+                        src="images/home2-edit-everyday.jpg"
+                        alt="Plus-size everyday fashion with a tailored blazer"
+                        loading="lazy"
+                        width="700"
+                        height="850"
+                    >
+                </a>
+
+                <div class="cc-home2-edit-card-overlay"></div>
+
+                <div class="cc-home2-edit-card-number" aria-hidden="true">
+                    02
+                </div>
+
+                <div class="cc-home2-edit-card-content">
+
+                    <span class="cc-home2-edit-label">
+                        EVERYDAY ESSENTIALS
+                    </span>
+
+                    <h3 class="cc-home2-edit-card-title">
+                        Everyday Icons
+                    </h3>
+
+                    <p class="cc-home2-edit-card-description">
+                        Effortless pieces. Endless possibilities.
+                    </p>
+
+                    <a
+                        href="shop.html?collection=everyday"
+                        class="cc-home2-edit-link"
+                    >
+                        Explore the Edit
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CO-ORD COLLECTION -->
+            <article class="cc-home2-edit-card">
+
+                <a
+                    href="shop.html?collection=coords"
+                    class="cc-home2-edit-card-image"
+                    aria-label="Explore The Co-ord Edit"
+                >
+                    <img
+                        src="images/home2-edit-coords.jpg"
+                        alt="Plus-size model wearing a coordinated two-piece outfit"
+                        loading="lazy"
+                        width="700"
+                        height="850"
+                    >
+                </a>
+
+                <div class="cc-home2-edit-card-overlay"></div>
+
+                <div class="cc-home2-edit-card-number" aria-hidden="true">
+                    03
+                </div>
+
+                <div class="cc-home2-edit-card-content">
+
+                    <span class="cc-home2-edit-label">
+                        MATCHED TO PERFECTION
+                    </span>
+
+                    <h3 class="cc-home2-edit-card-title">
+                        The Co-ord Edit
+                    </h3>
+
+                    <p class="cc-home2-edit-card-description">
+                        A complete look, effortlessly styled.
+                    </p>
+
+                    <a
+                        href="shop.html?collection=coords"
+                        class="cc-home2-edit-link"
+                    >
+                        Discover More
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- SECTION FOOTER -->
+        <div class="cc-home2-edit-footer">
+            <span class="cc-home2-edit-footer-line"></span>
+
+            <p>
+                Your curves. Your confidence.
+                <span>Your kind of style.</span>
+            </p>
+
+            <span class="cc-home2-edit-footer-line"></span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     HOME 2 — SECTION 5: FIND YOUR FIT
+========================================= -->
+
+<section class="cc-home2-fit" id="ccHome2Fit">
+
+    <div class="cc-home2-fit-container">
+
+        <!-- FIT GUIDE IMAGE -->
+        <div class="cc-home2-fit-image">
+            <img
+                src="images/home2-find-your-fit.jpg"
+                alt="Confident woman showcasing a comfortable, stylish outfit"
+                loading="lazy"
+                width="750"
+                height="850"
+            >
+        </div>
+
+        <!-- FIT GUIDE CONTENT -->
+        <div class="cc-home2-fit-content">
+
+            <span class="cc-home2-fit-eyebrow">
+                YOUR PERFECT FIT
+            </span>
+
+            <h2 class="cc-home2-fit-title">
+                Confidence Starts
+                <span>with the Right Fit.</span>
+            </h2>
+
+            <p class="cc-home2-fit-description">
+                Finding clothes you love should feel effortless.
+                Explore our fit guidance to discover styles that
+                feel comfortable, flatter your shape, and fit
+                beautifully into your everyday life.
+            </p>
+
+            <!-- FIT BENEFITS -->
+            <div class="cc-home2-fit-benefits">
+
+                <div class="cc-home2-fit-benefit">
+                    <span class="cc-home2-fit-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 7.5L12 3L20 7.5V16.5L12 21L4 16.5V7.5Z"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linejoin="round"/>
+                            <path d="M4.5 7.5L12 12L19.5 7.5M12 12V20.5"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="cc-home2-fit-benefit-text">
+                        <h3>Size Guidance</h3>
+                        <p>Find the size that works best for you.</p>
+                    </div>
+                </div>
+
+                <div class="cc-home2-fit-benefit">
+                    <span class="cc-home2-fit-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21S4 16.5 4 10.5C4 7.5 6 5 9 5C10.5 5 11.5 6 12 7C12.5 6 13.5 5 15 5C18 5 20 7.5 20 10.5C20 16.5 12 21 12 21Z"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="cc-home2-fit-benefit-text">
+                        <h3>Comfort-First Styles</h3>
+                        <p>Enjoy styles selected with comfort in mind.</p>
+                    </div>
+                </div>
+
+                <div class="cc-home2-fit-benefit">
+                    <span class="cc-home2-fit-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L19 6V11.5C19 16 16 19 12 21C8 19 5 16 5 11.5V6L12 3Z"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linejoin="round"/>
+                            <path d="M9 12L11 14L15 10"
+                                  stroke="currentColor"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="cc-home2-fit-benefit-text">
+                        <h3>Fit Guarantee</h3>
+                        <p>Learn about our fit support and guarantee.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FIT GUIDE CTA -->
+            <div class="cc-home2-fit-actions">
+                <a href="fit-guarantee.html" class="cc-btn-primary">
+                    Explore Our Fit Guide
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     HOME 2 — SECTION 6: THE STYLE JOURNAL
+========================================= -->
+
+<section class="cc-home2-journal" id="ccHome2Journal">
+
+    <div class="cc-home2-journal-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-home2-journal-header">
+
+            <div class="cc-home2-journal-heading">
+
+                <span class="cc-home2-journal-eyebrow">
+                    FROM THE STYLE JOURNAL
+                </span>
+
+                <h2 class="cc-home2-journal-title">
+                    Stories to
+                    <span>Inspire Your Style.</span>
+                </h2>
+
+                <p class="cc-home2-journal-description">
+                    Fashion ideas, styling tips, and everyday inspiration
+                    to help you make every look your own.
+                </p>
+
+            </div>
+
+            <a href="blog.html" class="cc-home2-journal-view-all">
+                View All Articles
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+        <!-- BLOG ARTICLE GRID -->
+        <div class="cc-home2-journal-grid">
+
+            <!-- ARTICLE 1 -->
+            <article class="cc-home2-journal-card">
+
+                <a href="blog.html"
+                   class="cc-home2-journal-image"
+                   aria-label="Read 5 Ways to Style Your Everyday Essentials">
+
+                    <img
+                        src="images/home2-journal-everyday.jpg"
+                        alt="Everyday plus-size outfit styling inspiration"
+                        loading="lazy"
+                        width="600"
+                        height="450"
+                    >
+
+                </a>
+
+                <div class="cc-home2-journal-card-content">
+
+                    <span class="cc-home2-journal-category">
+                        STYLE TIPS
+                    </span>
+
+                    <h3 class="cc-home2-journal-card-title">
+                        <a href="blog.html">
+                            5 Ways to Style Your Everyday Essentials
+                        </a>
+                    </h3>
+
+                    <p class="cc-home2-journal-card-description">
+                        Discover simple ways to create versatile,
+                        comfortable looks from your wardrobe favourites.
+                    </p>
+
+                    <a href="blog.html"
+                       class="cc-home2-journal-read-more">
+                        Read Article
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ARTICLE 2 -->
+            <article class="cc-home2-journal-card">
+
+                <a href="blog.html"
+                   class="cc-home2-journal-image"
+                   aria-label="Read Build a Wardrobe That Feels Like You">
+
+                    <img
+                        src="images/home2-journal-wardrobe.jpg"
+                        alt="Plus-size fashion wardrobe inspiration"
+                        loading="lazy"
+                        width="600"
+                        height="450"
+                    >
+
+                </a>
+
+                <div class="cc-home2-journal-card-content">
+
+                    <span class="cc-home2-journal-category">
+                        WARDROBE GUIDE
+                    </span>
+
+                    <h3 class="cc-home2-journal-card-title">
+                        <a href="blog.html">
+                            Build a Wardrobe That Feels Like You
+                        </a>
+                    </h3>
+
+                    <p class="cc-home2-journal-card-description">
+                        Find your personal style with timeless pieces
+                        that work beautifully together.
+                    </p>
+
+                    <a href="blog.html"
+                       class="cc-home2-journal-read-more">
+                        Read Article
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ARTICLE 3 -->
+            <article class="cc-home2-journal-card">
+
+                <a href="blog.html"
+                   class="cc-home2-journal-image"
+                   aria-label="Read Finding Your Look for Special Moments">
+
+                    <img
+                        src="images/home2-journal-occasion.jpg"
+                        alt="Elegant plus-size occasion wear inspiration"
+                        loading="lazy"
+                        width="600"
+                        height="450"
+                    >
+
+                </a>
+
+                <div class="cc-home2-journal-card-content">
+
+                    <span class="cc-home2-journal-category">
+                        OCCASION STYLE
+                    </span>
+
+                    <h3 class="cc-home2-journal-card-title">
+                        <a href="blog.html">
+                            Finding Your Look for Special Moments
+                        </a>
+                    </h3>
+
+                    <p class="cc-home2-journal-card-description">
+                        Explore outfit ideas for celebrations,
+                        evenings out, and memorable occasions.
+                    </p>
+
+                    <a href="blog.html"
+                       class="cc-home2-journal-read-more">
+                        Read Article
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOME 2: FINAL CTA BANNER -->
+<section class="cc-home2-cta" id="ccHome2Cta">
+    <div class="cc-home2-cta-background">
+        <img
+            src="images/home2-cta-banner.jpg"
+            alt="Elegant plus-size fashion celebrating confidence and personal style"
+            loading="lazy"
+            width="1600"
+            height="700"
+        >
+    </div>
+
+    <div class="cc-home2-cta-overlay"></div>
+
+    <div class="cc-home2-cta-container">
+        <div class="cc-home2-cta-content">
+
+            <span class="cc-home2-cta-eyebrow">
+                YOUR STYLE, YOUR RULES
+            </span>
+
+            <h2 class="cc-home2-cta-title">
+                Your Next Favourite
+                <span>Look Awaits.</span>
+            </h2>
+
+            <p class="cc-home2-cta-description">
+                Discover fashion that celebrates your curves
+                and makes every day feel special.
+            </p>
+
+            <div class="cc-home2-cta-actions">
+                <a href="shop.html" class="cc-btn-primary cc-home2-cta-primary">
+                    Shop the Collection
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a href="about.html" class="cc-btn-secondary cc-home2-cta-secondary">
+                    Explore Our Story
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END HOME 2: FINAL CTA BANNER -->
+
+    </main>
+
+<!-- =========================================
+     CURVE & CO. - FOOTER
+========================================= -->
+
+<footer class="curve-footer" id="curveFooter">
+
+    <div class="curve-footer-container">
+
+        <div class="curve-footer-grid">
+
+            <!-- BRAND COLUMN -->
+
+            <div class="curve-footer-brand">
+
+                <a href="index.html" class="curve-footer-logo">
+                    <img
+                        src="images/logo.png"
+                        alt="Curve & Co. Plus-Size Fashion Boutique"
+                    >
+                </a>
+
+                <p class="curve-footer-description">
+                    Fashion that celebrates every curve.
+                    Discover beautiful styles, thoughtful fits,
+                    and confidence for every occasion.
+                </p>
+
+                <!-- SOCIAL MEDIA ICONS -->
+
+                <div class="curve-footer-socials">
+
+                    <!-- INSTAGRAM -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                            />
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle
+                                class="curve-social-dot"
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="Facebook"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M13.5 21v-8h2.7l.4-3h-3.1V8.1
+                                c0-.9.3-1.6 1.6-1.6h1.7V3.8
+                                c-.8-.1-1.7-.2-2.6-.2
+                                -2.7 0-4.5 1.7-4.5 4.7V10H7v3h2.7v8z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- YOUTUBE -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="YouTube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M23 7.2a3 3 0 0 0-2.1-2.1
+                                C19 4.6 12 4.6 12 4.6
+                                s-7 0-8.9.5A3 3 0 0 0 1 7.2
+                                C.5 9.1.5 12 .5 12s0 2.9.5 4.8
+                                a3 3 0 0 0 2.1 2.1
+                                c1.9.5 8.9.5 8.9.5s7 0 8.9-.5
+                                a3 3 0 0 0 2.1-2.1
+                                c.5-1.9.5-4.8.5-4.8
+                                s0-2.9-.5-4.8Z"
+                            />
+                            <path
+                                class="curve-social-cutout"
+                                d="m10 15.5 5.2-3.5L10 8.5z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- LINKEDIN -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M5.2 8.5H2V22h3.2z
+                                M3.6 2A1.9 1.9 0 1 0 3.6 5.8
+                                1.9 1.9 0 0 0 3.6 2
+                                M22 13.7c0-4.1-2.2-6-5.2-6
+                                -2.4 0-3.5 1.3-4.1 2.2V8.5H9.5V22h3.2v-7.1
+                                c0-1.9.4-3.7 2.7-3.7
+                                2.2 0 2.2 2.1 2.2 3.8V22H22z"
+                            />
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="curve-footer-column">
+
+                <h3 class="curve-footer-heading">
+                    Quick Links
+                </h3>
+
+                <ul class="curve-footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="style-guide.html">Style Guide</a></li>
+                    <li><a href="fit-guarantee.html">Fit Guarantee</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- CUSTOMER CARE -->
+
+            <div class="curve-footer-column">
+
+                <h3 class="curve-footer-heading">
+                    Customer Care
+                </h3>
+
+                <ul class="curve-footer-links">
+                    <li>
+                        <a href="fit-guarantee.html">Size Guide</a>
+                    </li>
+                    <li>
+                        <a href="shipping-returns.html">
+                            Shipping &amp; Returns
+                        </a>
+                    </li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="curve-footer-column curve-footer-newsletter">
+
+                <h3 class="curve-footer-heading">
+                    Join Our Style Circle
+                </h3>
+
+                <p class="curve-footer-newsletter-text">
+                    Get style inspiration, new collection updates
+                    and boutique news in your inbox.
+                </p>
+
+                <form
+                    class="curve-newsletter-form"
+                    action="#"
+                    method="post"
+                >
+
+                    <label
+                        for="curveNewsletterEmail"
+                        class="curve-newsletter-label"
+                    >
+                        Email address
+                    </label>
+
+                    <div class="curve-newsletter-field">
+
+                        <input
+                            type="email"
+                            id="curveNewsletterEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="curve-newsletter-btn"
+                            aria-label="Subscribe to newsletter"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER DIVIDER -->
+
+        <div class="curve-footer-divider"></div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="curve-footer-bottom">
+
+            <p class="curve-footer-copyright">
+                &copy; <span id="curveCopyrightYear">2026</span>
+                Curve &amp; Co. All rights reserved.
+            </p>
+
+            <div class="curve-footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">
+                    Terms &amp; Conditions
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- JAVASCRIPT -->
+
+<!-- SCROLL TO TOP BUTTON -->
+<button
+    type="button"
+    class="cc-scroll-top"
+    id="ccScrollTop"
+    aria-label="Scroll to top"
+    title="Scroll to top"
+>
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
+</button>
+
+    <script src="js/main.js" defer></script>
+    
+
+</body>
+</html>

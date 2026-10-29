@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover stylish, inclusive plus-size fashion at Curve & Co."
+    >
+
+    <title>Curve & Co. | Plus-Size Fashion Boutique</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="curve-header" id="curveHeader">
+
+        <div class="curve-header-container">
+
+            <!-- LOGO - LEFT -->
+
+            <a
+                href="index.html"
+                class="curve-logo"
+                aria-label="Curve & Co. Home"
+            >
+                <img
+                    src="images/logo.png"
+                    alt="Curve & Co. Plus-Size Fashion Boutique"
+                    class="curve-logo-img"
+                >
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION - CENTER -->
+
+            <nav
+                class="curve-desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <ul class="curve-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+
+                    <li class="curve-nav-item curve-home-dropdown">
+
+                        <button
+                            type="button"
+                            class="curve-nav-link curve-home-toggle"
+                            aria-expanded="false"
+                            aria-controls="curveHomeDropdown"
+                        >
+                            <span>Home</span>
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+
+                        <ul
+                            class="curve-dropdown-menu"
+                            id="curveHomeDropdown"
+                        >
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home2.html">Home 2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="curve-nav-item">
+                        <a href="about.html" class="curve-nav-link active">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <!-- SHOP -->
+
+                    <li class="curve-nav-item">
+                        <a href="shop.html" class="curve-nav-link">
+                            Shop
+                        </a>
+                    </li>
+
+
+                    <!-- STYLE GUIDE -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="style-guide.html"
+                            class="curve-nav-link"
+                        >
+                            Style Guide
+                        </a>
+                    </li>
+
+
+                    <!-- FIT GUARANTEE -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="fit-guarantee.html"
+                            class="curve-nav-link"
+                        >
+                            Fit Guarantee
+                        </a>
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li class="curve-nav-item">
+                        <a
+                            href="contact.html"
+                            class="curve-nav-link"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- DESKTOP ACTIONS - RIGHT -->
+
+            <div class="curve-header-actions">
+
+                <!-- RTL BUTTON -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-rtl-toggle"
+                    data-curve-rtl
+                    aria-label="Toggle right-to-left layout"
+                    aria-pressed="false"
+                    title="Toggle RTL"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path d="M4 8h15"/>
+                        <path d="m15 4 4 4-4 4"/>
+                        <path d="M20 16H5"/>
+                        <path d="m9 12-4 4 4 4"/>
+                    </svg>
+                </button>
+
+
+                <!-- DARK MODE BUTTON -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-theme-toggle"
+                    data-curve-theme
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark mode"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                            8.5 8.5 0 1 0 20.5 15.5Z"
+                        />
+                    </svg>
+                </button>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <a href="login.html" class="curve-login-btn">
+                    Login
+                </a>
+
+            </div>
+
+
+            <!-- HAMBURGER BUTTON -->
+
+            <button
+                type="button"
+                class="curve-menu-toggle"
+                id="curveMenuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="curveMobilePanel"
+            >
+
+                <!-- MENU ICON -->
+
+                <svg
+                    class="curve-menu-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M4 6h16"/>
+                    <path d="M4 12h16"/>
+                    <path d="M4 18h16"/>
+                </svg>
+
+                <!-- CLOSE ICON -->
+
+                <svg
+                    class="curve-close-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="m6 6 12 12"/>
+                    <path d="M18 6 6 18"/>
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             RESPONSIVE HAMBURGER PANEL
+        ====================================== -->
+
+        <div
+            class="curve-mobile-panel"
+            id="curveMobilePanel"
+            aria-hidden="true"
+            inert
+        >
+
+            <!-- MOBILE NAVIGATION -->
+
+            <nav
+                class="curve-mobile-nav"
+                aria-label="Responsive navigation"
+            >
+
+                <ul class="curve-mobile-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+
+                    <li class="curve-mobile-nav-item curve-mobile-home">
+
+                        <button
+                            type="button"
+                            class="curve-mobile-link curve-mobile-home-toggle"
+                            aria-expanded="false"
+                            aria-controls="curveMobileHomeDropdown"
+                        >
+                            <span>Home</span>
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+
+                        <ul
+                            class="curve-mobile-dropdown"
+                            id="curveMobileHomeDropdown"
+                            hidden
+                        >
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home2.html">Home 2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="curve-mobile-nav-item">
+                        <a href="about.html" class="curve-mobile-link active">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <!-- SHOP -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a href="shop.html" class="curve-mobile-link">
+                            Shop
+                        </a>
+                    </li>
+
+
+                    <!-- STYLE GUIDE -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="style-guide.html"
+                            class="curve-mobile-link"
+                        >
+                            Style Guide
+                        </a>
+                    </li>
+
+
+                    <!-- FIT GUARANTEE -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="fit-guarantee.html"
+                            class="curve-mobile-link"
+                        >
+                            Fit Guarantee
+                        </a>
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li class="curve-mobile-nav-item">
+                        <a
+                            href="contact.html"
+                            class="curve-mobile-link"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MOBILE ACTION BUTTONS -->
+
+            <div class="curve-mobile-actions">
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-rtl-toggle"
+                    data-curve-rtl
+                    aria-label="Toggle right-to-left layout"
+                    aria-pressed="false"
+                    title="Toggle RTL"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 8h15"/>
+                        <path d="m15 4 4 4-4 4"/>
+                        <path d="M20 16H5"/>
+                        <path d="m9 12-4 4 4 4"/>
+                    </svg>
+                </button>
+
+
+                <!-- DARK MODE -->
+
+                <button
+                    type="button"
+                    class="curve-icon-btn curve-theme-toggle"
+                    data-curve-theme
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark mode"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                            8.5 8.5 0 1 0 20.5 15.5Z"
+                        />
+                    </svg>
+                </button>
+
+
+                <!-- LOGIN -->
+
+                <a href="login.html" class="curve-login-btn">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         PAGE CONTENT
+    ====================================== -->
+
+    <main id="mainContent">
+
+<!-- ==========================================
+     CURVE & CO. - ABOUT HERO
+========================================== -->
+
+<section class="cc-about-hero" id="ccAboutHero">
+    <div class="cc-about-hero-background">
+        <img
+            src="images/about-hero.jpg"
+            alt="Curve & Co. inclusive fashion collection"
+            fetchpriority="high"
+            width="1600"
+            height="750"
+        >
+    </div>
+
+    <div class="cc-about-hero-overlay"></div>
+
+    <div class="cc-about-hero-container">
+        <div class="cc-about-hero-content">
+
+            <span class="cc-about-hero-eyebrow">
+                GET TO KNOW US
+            </span>
+
+            <h1 class="cc-about-hero-title">
+                Our Story,
+                <span>Your Style.</span>
+            </h1>
+
+            <p class="cc-about-hero-description">
+                At Curve & Co., we believe fashion should celebrate
+                every curve, embrace individuality, and help you
+                feel confident in your own style.
+            </p>
+
+            <div class="cc-about-hero-actions">
+                <a href="#ccAboutStory"
+                   class="cc-btn-primary cc-about-hero-primary">
+                    Discover Our Story
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a href="shop.html"
+                   class="cc-btn-secondary cc-about-hero-secondary">
+                    Explore Our Collection
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- END ABOUT HERO -->
+
+<!-- ==========================================
+     ABOUT PAGE - OUR STORY
+========================================== -->
+
+<section class="cc-about-story" id="ccAboutStory">
+    <div class="cc-about-story-container">
+
+        <!-- LEFT: IMAGE WITH FLOATING CARD -->
+        <div class="cc-about-story-visual">
+
+            <!-- Decorative Circle -->
+            <div class="cc-about-story-decoration"
+                 aria-hidden="true"></div>
+
+            <!-- Main Image -->
+            <div class="cc-about-story-image">
+                <img
+                    src="images/about-our-story.jpg"
+                    alt="A confident woman wearing an elegant Curve & Co. outfit"
+                    loading="lazy"
+                    width="650"
+                    height="800"
+                >
+            </div>
+
+            <!-- Floating Card -->
+            <div class="cc-about-story-floating-card">
+                <span class="cc-about-story-card-icon"
+                      aria-hidden="true">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                    </svg>
+                </span>
+
+                <div class="cc-about-story-card-content">
+                    <strong>Made for Every Curve</strong>
+                    <p>Style that celebrates you.</p>
+                </div>
+            </div>
+
+            <!-- Decorative Label -->
+            <span class="cc-about-story-vertical-label">
+                CONFIDENCE IN EVERY CURVE
+            </span>
+
+        </div>
+
+        <!-- RIGHT: STORY CONTENT -->
+        <div class="cc-about-story-content">
+
+            <span class="cc-about-story-eyebrow">
+                THE STORY BEHIND THE STYLE
+            </span>
+
+            <h2 class="cc-about-story-title">
+                Fashion That
+                <span>Feels Like You.</span>
+            </h2>
+
+            <p class="cc-about-story-intro">
+                We believe great style has no size limit.
+                It begins with feeling comfortable, expressing
+                yourself, and wearing what makes you feel confident.
+            </p>
+
+            <p class="cc-about-story-description">
+                Curve &amp; Co. celebrates individuality through
+                thoughtfully selected plus-size fashion. Our vision
+                is to make discovering your personal style feel
+                welcoming, effortless, and inspiring.
+            </p>
+
+            <!-- Story Highlights -->
+            <div class="cc-about-story-highlights">
+
+                <div class="cc-about-story-highlight">
+                    <span class="cc-about-story-highlight-number">
+                        01
+                    </span>
+
+                    <div class="cc-about-story-highlight-content">
+                        <h3>Designed Around You</h3>
+                        <p>
+                            Styles that put comfort, fit, and
+                            self-expression first.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cc-about-story-highlight">
+                    <span class="cc-about-story-highlight-number">
+                        02
+                    </span>
+
+                    <div class="cc-about-story-highlight-content">
+                        <h3>Confidence Without Limits</h3>
+                        <p>
+                            Fashion that celebrates your individuality
+                            and personal style.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="#ccAboutHistory"
+               class="cc-btn-primary cc-about-story-button">
+                Discover Our History
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- END ABOUT PAGE - OUR STORY -->
+
+<!-- ==========================================
+     ABOUT PAGE - OUR HISTORY TIMELINE
+========================================== -->
+
+<section class="cc-about-history" id="ccAboutHistory">
+
+    <div class="cc-about-history-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-about-history-header">
+
+            <span class="cc-about-history-eyebrow">
+                OUR JOURNEY
+            </span>
+
+            <h2 class="cc-about-history-title">
+                The Story Behind
+                <span>Our Style.</span>
+            </h2>
+
+            <p class="cc-about-history-description">
+                Every chapter reflects our vision of making fashion
+                more welcoming, expressive, and confidence-inspiring.
+            </p>
+
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="cc-about-history-timeline">
+
+            <!-- MILESTONE 1 -->
+            <article class="cc-about-history-item">
+
+                <div class="cc-about-history-year">
+                    <span>2020</span>
+                </div>
+
+                <div class="cc-about-history-marker"
+                     aria-hidden="true"></div>
+
+                <div class="cc-about-history-card">
+
+                    <span class="cc-about-history-label">
+                        CHAPTER 01
+                    </span>
+
+                    <h3 class="cc-about-history-card-title">
+                        Where It All Began
+                    </h3>
+
+                    <p class="cc-about-history-card-description">
+                        Inspired by the belief that great style has no
+                        size limit, Curve &amp; Co. began with a vision
+                        to celebrate individuality and confidence.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- MILESTONE 2 -->
+            <article class="cc-about-history-item">
+
+                <div class="cc-about-history-year">
+                    <span>2022</span>
+                </div>
+
+                <div class="cc-about-history-marker"
+                     aria-hidden="true"></div>
+
+                <div class="cc-about-history-card">
+
+                    <span class="cc-about-history-label">
+                        CHAPTER 02
+                    </span>
+
+                    <h3 class="cc-about-history-card-title">
+                        Growing the Collection
+                    </h3>
+
+                    <p class="cc-about-history-card-description">
+                        Our story continued with a broader range of
+                        outfit ideas, from effortless everyday
+                        essentials to styles for special occasions.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- MILESTONE 3 -->
+            <article class="cc-about-history-item">
+
+                <div class="cc-about-history-year">
+                    <span>2024</span>
+                </div>
+
+                <div class="cc-about-history-marker"
+                     aria-hidden="true"></div>
+
+                <div class="cc-about-history-card">
+
+                    <span class="cc-about-history-label">
+                        CHAPTER 03
+                    </span>
+
+                    <h3 class="cc-about-history-card-title">
+                        A Focus on Fit
+                    </h3>
+
+                    <p class="cc-about-history-card-description">
+                        Comfort, thoughtful silhouettes, and
+                        personal expression became key themes in
+                        our approach to inclusive fashion.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- MILESTONE 4 -->
+            <article class="cc-about-history-item">
+
+                <div class="cc-about-history-year">
+                    <span>2026</span>
+                </div>
+
+                <div class="cc-about-history-marker"
+                     aria-hidden="true"></div>
+
+                <div class="cc-about-history-card">
+
+                    <span class="cc-about-history-label">
+                        CHAPTER 04
+                    </span>
+
+                    <h3 class="cc-about-history-card-title">
+                        Looking Ahead
+                    </h3>
+
+                    <p class="cc-about-history-card-description">
+                        We look forward to inspiring confidence,
+                        celebrating individuality, and helping
+                        everyone discover a style that feels their own.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- CLOSING STATEMENT -->
+        <div class="cc-about-history-footer">
+
+            <p>
+                Our journey continues, and
+                <span>you are part of the story.</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END ABOUT PAGE - OUR HISTORY -->
+
+<!-- ==========================================
+     ABOUT PAGE - OUR MISSION & VALUES
+========================================== -->
+
+<section class="cc-about-values" id="ccAboutValues">
+
+    <div class="cc-about-values-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-about-values-header">
+
+            <span class="cc-about-values-eyebrow">
+                WHAT WE BELIEVE
+            </span>
+
+            <h2 class="cc-about-values-title">
+                Our Mission &
+                <span>Our Values.</span>
+            </h2>
+
+            <p class="cc-about-values-description">
+                Everything we do begins with a simple belief:
+                fashion should help you feel comfortable, confident,
+                and completely yourself.
+            </p>
+
+        </div>
+
+        <!-- VALUES GRID -->
+        <div class="cc-about-values-grid">
+
+            <!-- VALUE 1 -->
+            <article class="cc-about-values-card">
+
+                <div class="cc-about-values-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                    </svg>
+                </div>
+
+                <span class="cc-about-values-number">01</span>
+
+                <h3 class="cc-about-values-card-title">
+                    Inclusive Fashion
+                </h3>
+
+                <p class="cc-about-values-card-description">
+                    We celebrate different curves, shapes, and
+                    personal styles with fashion that welcomes
+                    everyone to express themselves.
+                </p>
+
+                <span class="cc-about-values-card-line"
+                      aria-hidden="true"></span>
+
+            </article>
+
+            <!-- VALUE 2 -->
+            <article class="cc-about-values-card">
+
+                <div class="cc-about-values-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M12 3v18"/>
+                        <path d="M7 7c0-2.2 2.2-4 5-4s5 1.8 5 4-2.2 4-5 4-5 1.8-5 4 2.2 4 5 4 5-1.8 5-4"/>
+                    </svg>
+                </div>
+
+                <span class="cc-about-values-number">02</span>
+
+                <h3 class="cc-about-values-card-title">
+                    Comfort First
+                </h3>
+
+                <p class="cc-about-values-card-description">
+                    We value wearable styles and thoughtful fits
+                    that help you feel at ease from everyday moments
+                    to special occasions.
+                </p>
+
+                <span class="cc-about-values-card-line"
+                      aria-hidden="true"></span>
+
+            </article>
+
+            <!-- VALUE 3 -->
+            <article class="cc-about-values-card">
+
+                <div class="cc-about-values-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/>
+                        <path d="m19 14 1.1 3.1L23 18l-2.9 1L19 22l-1.1-3-2.9-1 2.9-.9L19 14Z"/>
+                    </svg>
+                </div>
+
+                <span class="cc-about-values-number">03</span>
+
+                <h3 class="cc-about-values-card-title">
+                    Quality &amp; Detail
+                </h3>
+
+                <p class="cc-about-values-card-description">
+                    We appreciate considered details, versatile
+                    designs, and pieces that bring lasting appeal
+                    to your wardrobe unique for you.
+                </p>
+
+                <span class="cc-about-values-card-line"
+                      aria-hidden="true"></span>
+
+            </article>
+
+            <!-- VALUE 4 -->
+            <article class="cc-about-values-card">
+
+                <div class="cc-about-values-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2"/>
+                        <path d="M12 20v2"/>
+                        <path d="m4.93 4.93 1.42 1.42"/>
+                        <path d="m17.65 17.65 1.42 1.42"/>
+                        <path d="M2 12h2"/>
+                        <path d="M20 12h2"/>
+                        <path d="m4.93 19.07 1.42-1.42"/>
+                        <path d="m17.65 6.35 1.42-1.42"/>
+                    </svg>
+                </div>
+
+                <span class="cc-about-values-number">04</span>
+
+                <h3 class="cc-about-values-card-title">
+                    Confidence for all
+                </h3>
+
+                <p class="cc-about-values-card-description">
+                    We encourage you to embrace your individuality,
+                    discover your personal style, and feel good
+                    about the person you are.
+                </p>
+
+                <span class="cc-about-values-card-line"
+                      aria-hidden="true"></span>
+
+            </article>
+
+        </div>
+
+        <!-- CLOSING STATEMENT -->
+        <div class="cc-about-values-footer">
+            <p>
+                Your curves. Your confidence.
+                <span>Your own kind of style.</span>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END ABOUT PAGE - OUR MISSION & VALUES -->
+
+<!-- ==========================================
+     ABOUT PAGE — DESIGN PHILOSOPHY
+=========================================== -->
+
+<!-- ==========================================
+     CURVE & CO. — DESIGN PHILOSOPHY
+========================================== -->
+
+<section class="cc-about-philosophy" id="ccAboutPhilosophy">
+
+    <div class="cc-about-philosophy-container">
+
+        <!-- SECTION HEADER -->
+        <header class="cc-about-philosophy-header">
+
+            <span class="cc-about-philosophy-eyebrow">
+                THOUGHTFULLY CONSIDERED
+            </span>
+
+            <h2 class="cc-about-philosophy-title">
+                More Than Fashion.
+                <span>A Feeling, A Statement.</span>
+            </h2>
+
+            <p class="cc-about-philosophy-intro">
+                Thoughtful design, personal expression, and confidence
+                in every curve. Discover the principles behind the way
+                we approach fashion.
+            </p>
+
+        </header>
+
+
+        <!-- THREE EQUAL FEATURE CARDS -->
+        <div class="cc-about-philosophy-grid">
+
+            <!-- FEATURE 01 -->
+            <article class="cc-about-philosophy-card">
+
+                <div class="cc-about-philosophy-image-wrap">
+
+                    <img
+                        src="images/about-philosophy-silhouette.jpg"
+                        alt="Model wearing an elegant, tailored neutral outfit"
+                        class="cc-about-philosophy-image"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-philosophy-image-label">
+                        STYLE THAT CELEBRATES YOU
+                    </span>
+
+                    <span class="cc-about-philosophy-number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="cc-about-philosophy-card-content">
+
+                    <span class="cc-about-philosophy-card-label">
+                        THE SILHOUETTE
+                    </span>
+
+                    <h3>
+                        Made to Celebrate
+                        <span>Your Shape.</span>
+                    </h3>
+
+                    <p>
+                        Thoughtful shapes, considered proportions, and
+                        flattering fits help you feel comfortable and
+                        confident in your own style.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- FEATURE 02 -->
+            <article class="cc-about-philosophy-card">
+
+                <div class="cc-about-philosophy-image-wrap">
+
+                    <img
+                        src="images/about-philosophy-detail.jpg"
+                        alt="Close-up of soft fabric and carefully finished clothing details"
+                        class="cc-about-philosophy-image"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-philosophy-image-label">
+                        COMFORT IN EVERY DETAIL
+                    </span>
+
+                    <span class="cc-about-philosophy-number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="cc-about-philosophy-card-content">
+
+                    <span class="cc-about-philosophy-card-label">
+                        THE COMFORT
+                    </span>
+
+                    <h3>
+                        Feel Good.
+                        <span>Look Effortless.</span>
+                    </h3>
+
+                    <p>
+                        Soft textures, practical details, and easy-to-wear
+                        styles make fashion feel natural throughout
+                        your day.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- FEATURE 03 -->
+            <article class="cc-about-philosophy-card">
+
+                <div class="cc-about-philosophy-image-wrap">
+
+                    <img
+                        src="images/about-philosophy-expression.jpg"
+                        alt="Model expressing personal style in a contemporary outfit"
+                        class="cc-about-philosophy-image"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-philosophy-image-label">
+                        EXPRESS YOURSELF
+                    </span>
+
+                    <span class="cc-about-philosophy-number">
+                        03
+                    </span>
+
+                </div>
+
+                <div class="cc-about-philosophy-card-content">
+
+                    <span class="cc-about-philosophy-card-label">
+                        YOUR EXPRESSION
+                    </span>
+
+                    <h3>
+                        Your Style.
+                        <span>Your Story.</span>
+                    </h3>
+
+                    <p>
+                        From everyday essentials to standout pieces,
+                        discover styles that reflect your personality
+                        and let you express yourself.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- CLOSING STATEMENT -->
+        <div class="cc-about-philosophy-footer">
+
+            <p>
+                Fashion is personal.
+                <span>Confidence is always in style.</span>
+            </p>
+
+            <a href="shop.html" class="cc-btn-primary">
+                Find Your Style
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CURVE & CO. — MEET OUR TEAM
+========================================== -->
+
+<section class="cc-about-team" id="ccAboutTeam">
+    <div class="cc-about-team-container">
+
+        <!-- SECTION HEADER -->
+        <div class="cc-about-team-header">
+
+            <div class="cc-about-team-heading">
+                <span class="cc-about-team-eyebrow">
+                    THE PEOPLE BEHIND THE STYLE
+                </span>
+
+                <h2 class="cc-about-team-title">
+                    Meet Our
+                    <span>Creative Family.</span>
+                </h2>
+            </div>
+
+            <div class="cc-about-team-intro-wrap">
+                <p class="cc-about-team-intro">
+                    Behind every collection is a team that believes
+                    great style should celebrate every body. We bring
+                    creativity, care, and a shared passion for helping
+                    every customer feel confident.
+                </p>
+
+                <span class="cc-about-team-intro-line"></span>
+            </div>
+
+        </div>
+
+        <!-- TEAM GRID -->
+        <div class="cc-about-team-grid">
+
+            <!-- TEAM MEMBER 1 -->
+            <article class="cc-about-team-card">
+
+                <div class="cc-about-team-card-image">
+                    <img
+                        src="images/team-founder.jpg"
+                        alt="Alex Morgan, founder and creative director"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-team-card-number">01</span>
+                </div>
+
+                <div class="cc-about-team-card-content">
+
+                    <span class="cc-about-team-role">
+                        FOUNDER &amp; CREATIVE DIRECTOR
+                    </span>
+
+                    <h3>Alex Morgan</h3>
+
+                    <p>
+                        Leading our creative vision with a passion
+                        for inclusive design and everyday confidence.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- TEAM MEMBER 2 -->
+            <article class="cc-about-team-card">
+
+                <div class="cc-about-team-card-image">
+                    <img
+                        src="images/team-designer.jpg"
+                        alt="Olivia Bennett, fashion designer"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-team-card-number">02</span>
+                </div>
+
+                <div class="cc-about-team-card-content">
+
+                    <span class="cc-about-team-role">
+                        FASHION DESIGNER
+                    </span>
+
+                    <h3>Olivia Bennett</h3>
+
+                    <p>
+                        Creating thoughtful silhouettes and distinctive
+                        details for every collection.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- TEAM MEMBER 3 -->
+            <article class="cc-about-team-card">
+
+                <div class="cc-about-team-card-image">
+                    <img
+                        src="images/team-stylist.jpg"
+                        alt="Sophia Williams, personal stylist"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-team-card-number">03</span>
+                </div>
+
+                <div class="cc-about-team-card-content">
+
+                    <span class="cc-about-team-role">
+                        PERSONAL STYLIST
+                    </span>
+
+                    <h3>Sophia Williams</h3>
+
+                    <p>
+                        Helping every customer discover a personal
+                        style that feels authentic and uniquely theirs.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- TEAM MEMBER 4 -->
+            <article class="cc-about-team-card">
+
+                <div class="cc-about-team-card-image">
+                    <img
+                        src="images/team-customer-care.jpg"
+                        alt="Emma Carter, customer experience specialist"
+                        loading="lazy"
+                    >
+
+                    <span class="cc-about-team-card-number">04</span>
+                </div>
+
+                <div class="cc-about-team-card-content">
+
+                    <span class="cc-about-team-role">
+                        CUSTOMER EXPERIENCE
+                    </span>
+
+                    <h3>Emma Carter</h3>
+
+                    <p>
+                        Making every shopping experience personal,
+                        welcoming, and effortless.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- TEAM STATEMENT -->
+        <div class="cc-about-team-statement">
+
+            <span class="cc-about-team-statement-label">
+                WHAT BRINGS US TOGETHER
+            </span>
+
+            <h3>
+                Fashion is for every body.
+                <span>Confidence is for everyone.</span>
+            </h3>
+
+            <a href="shop.html" class="cc-btn-secondary">
+                Explore Our Collection
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+            <span class="cc-about-team-statement-number"
+                  aria-hidden="true">
+                C&amp;C
+            </span>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================================
+     SECTION 7 — CONFIDENCE & COMMUNITY
+========================================== -->
+
+<section class="cc-about-community" id="ccAboutCommunity">
+    <div class="cc-about-community-container">
+
+        <!-- IMAGE SIDE -->
+        <div class="cc-about-community-visual">
+
+            <div class="cc-about-community-image">
+                <img
+                    src="images/about-community.jpg"
+                    alt="Women celebrating personal style and confidence"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="cc-about-community-image-note">
+                <span class="cc-about-community-note-mark">C&amp;C</span>
+
+                <p>
+                    Different bodies.
+                    <span>One beautiful community.</span>
+                </p>
+            </div>
+
+            <span class="cc-about-community-image-label">
+                STYLE WITHOUT LIMITS
+            </span>
+
+        </div>
+
+        <!-- CONTENT SIDE -->
+        <div class="cc-about-community-content">
+
+            <span class="cc-about-community-eyebrow">
+                MORE THAN WHAT YOU WEAR
+            </span>
+
+            <h2 class="cc-about-community-title">
+                Confidence Looks
+                <span>Good on Everyone.</span>
+            </h2>
+
+            <p class="cc-about-community-description">
+                At Curve &amp; Co., we believe fashion is about more
+                than finding the right outfit. It is about feeling
+                comfortable in your own skin, expressing your
+                individuality, and celebrating what makes you unique.
+            </p>
+
+            <p class="cc-about-community-description">
+                We are building a community where every body belongs,
+                every personal style is welcome, and confidence is
+                never limited by size.
+            </p>
+
+            <!-- COMMUNITY VALUES -->
+            <div class="cc-about-community-values">
+
+                <article class="cc-about-community-value">
+                    <span class="cc-about-community-value-number">01</span>
+
+                    <div class="cc-about-community-value-content">
+                        <h3>Every Body Belongs</h3>
+
+                        <p>
+                            Inclusive styles designed to help more
+                            people feel seen and celebrated.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="cc-about-community-value">
+                    <span class="cc-about-community-value-number">02</span>
+
+                    <div class="cc-about-community-value-content">
+                        <h3>Confidence Comes First</h3>
+
+                        <p>
+                            Fashion that supports self-expression,
+                            comfort, and feeling like yourself.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="cc-about-community-value">
+                    <span class="cc-about-community-value-number">03</span>
+
+                    <div class="cc-about-community-value-content">
+                        <h3>Celebrate Your Style</h3>
+
+                        <p>
+                            Discover pieces that reflect your
+                            personality, your mood, and your story.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="shop.html" class="cc-btn-primary">
+                Discover Your Style
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================================
+     SECTION 8 — FINAL CTA BANNER
+     CURVE & CO.
+========================================== -->
+
+<section class="cc-about-final-cta" id="ccAboutFinalCta">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="cc-about-final-cta-background">
+        <img
+            src="images/about-final-cta.jpg"
+            alt="Elegant plus-size fashion collection"
+            loading="lazy"
+        >
+    </div>
+
+    <!-- DARK OVERLAY -->
+    <div class="cc-about-final-cta-overlay"></div>
+
+    <!-- CTA CONTENT -->
+    <div class="cc-about-final-cta-container">
+
+        <span class="cc-about-final-cta-eyebrow">
+            YOUR STYLE, YOUR STORY
+        </span>
+
+        <h2 class="cc-about-final-cta-title">
+            Ready to Feel
+            <span>Beautifully You?</span>
+        </h2>
+
+        <p class="cc-about-final-cta-description">
+            Discover thoughtfully chosen styles that celebrate your
+            individuality, embrace your curves, and make every day
+            feel a little more confident.
+        </p>
+
+        <div class="cc-about-final-cta-actions">
+
+            <a href="shop.html" class="cc-btn-primary">
+                Shop the Collection
+                <span aria-hidden="true">&rarr;</span>
+            </a>
+
+        </div>
+
+        <span class="cc-about-final-cta-decoration"
+              aria-hidden="true">
+            C&amp;C
+        </span>
+
+    </div>
+
+</section>
+
+    </main>
+
+<!-- =========================================
+     CURVE & CO. - FOOTER
+========================================= -->
+
+<footer class="curve-footer" id="curveFooter">
+
+    <div class="curve-footer-container">
+
+        <div class="curve-footer-grid">
+
+            <!-- BRAND COLUMN -->
+
+            <div class="curve-footer-brand">
+
+                <a href="index.html" class="curve-footer-logo">
+                    <img
+                        src="images/logo.png"
+                        alt="Curve & Co. Plus-Size Fashion Boutique"
+                    >
+                </a>
+
+                <p class="curve-footer-description">
+                    Fashion that celebrates every curve.
+                    Discover beautiful styles, thoughtful fits,
+                    and confidence for every occasion.
+                </p>
+
+                <!-- SOCIAL MEDIA ICONS -->
+
+                <div class="curve-footer-socials">
+
+                    <!-- INSTAGRAM -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                            />
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle
+                                class="curve-social-dot"
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="Facebook"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M13.5 21v-8h2.7l.4-3h-3.1V8.1
+                                c0-.9.3-1.6 1.6-1.6h1.7V3.8
+                                c-.8-.1-1.7-.2-2.6-.2
+                                -2.7 0-4.5 1.7-4.5 4.7V10H7v3h2.7v8z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- YOUTUBE -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="YouTube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M23 7.2a3 3 0 0 0-2.1-2.1
+                                C19 4.6 12 4.6 12 4.6
+                                s-7 0-8.9.5A3 3 0 0 0 1 7.2
+                                C.5 9.1.5 12 .5 12s0 2.9.5 4.8
+                                a3 3 0 0 0 2.1 2.1
+                                c1.9.5 8.9.5 8.9.5s7 0 8.9-.5
+                                a3 3 0 0 0 2.1-2.1
+                                c.5-1.9.5-4.8.5-4.8
+                                s0-2.9-.5-4.8Z"
+                            />
+                            <path
+                                class="curve-social-cutout"
+                                d="m10 15.5 5.2-3.5L10 8.5z"
+                            />
+                        </svg>
+                    </a>
+
+                    <!-- LINKEDIN -->
+
+                    <a
+                        href="#"
+                        class="curve-social-link"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                class="curve-social-filled"
+                                d="M5.2 8.5H2V22h3.2z
+                                M3.6 2A1.9 1.9 0 1 0 3.6 5.8
+                                1.9 1.9 0 0 0 3.6 2
+                                M22 13.7c0-4.1-2.2-6-5.2-6
+                                -2.4 0-3.5 1.3-4.1 2.2V8.5H9.5V22h3.2v-7.1
+                                c0-1.9.4-3.7 2.7-3.7
+                                2.2 0 2.2 2.1 2.2 3.8V22H22z"
+                            />
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="curve-footer-column">
+
+                <h3 class="curve-footer-heading">
+                    Quick Links
+                </h3>
+
+                <ul class="curve-footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="style-guide.html">Style Guide</a></li>
+                    <li><a href="fit-guarantee.html">Fit Guarantee</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- CUSTOMER CARE -->
+
+            <div class="curve-footer-column">
+
+                <h3 class="curve-footer-heading">
+                    Customer Care
+                </h3>
+
+                <ul class="curve-footer-links">
+                    <li>
+                        <a href="fit-guarantee.html">Size Guide</a>
+                    </li>
+                    <li>
+                        <a href="shipping-returns.html">
+                            Shipping &amp; Returns
+                        </a>
+                    </li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="curve-footer-column curve-footer-newsletter">
+
+                <h3 class="curve-footer-heading">
+                    Join Our Style Circle
+                </h3>
+
+                <p class="curve-footer-newsletter-text">
+                    Get style inspiration, new collection updates
+                    and boutique news in your inbox.
+                </p>
+
+                <form
+                    class="curve-newsletter-form"
+                    action="#"
+                    method="post"
+                >
+
+                    <label
+                        for="curveNewsletterEmail"
+                        class="curve-newsletter-label"
+                    >
+                        Email address
+                    </label>
+
+                    <div class="curve-newsletter-field">
+
+                        <input
+                            type="email"
+                            id="curveNewsletterEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="curve-newsletter-btn"
+                            aria-label="Subscribe to newsletter"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER DIVIDER -->
+
+        <div class="curve-footer-divider"></div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="curve-footer-bottom">
+
+            <p class="curve-footer-copyright">
+                &copy; <span id="curveCopyrightYear">2026</span>
+                Curve &amp; Co. All rights reserved.
+            </p>
+
+            <div class="curve-footer-legal">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">
+                    Terms &amp; Conditions
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- JAVASCRIPT -->
+
+<!-- SCROLL TO TOP BUTTON -->
+<button
+    type="button"
+    class="cc-scroll-top"
+    id="ccScrollTop"
+    aria-label="Scroll to top"
+    title="Scroll to top"
+>
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
+</button>
+
+    <script src="js/main.js" defer></script>
+    
+
+</body>
+</html>
