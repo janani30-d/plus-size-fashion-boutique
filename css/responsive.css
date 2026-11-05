@@ -21566,40 +21566,6 @@ html[data-theme="dark"] .cc-shop-products-sort select option {
 
 }
 
-@media (max-width: 599px) {
 
-    .cc-shop-categories {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        gap: 10px;
 
-        overflow-x: auto;
-        overflow-y: hidden;
 
-        padding: 0 16px 12px 4px;
-        margin-right: 0;
-
-        box-sizing: border-box;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .cc-shop-categories::-webkit-scrollbar {
-        display: none;
-    }
-
-    .cc-shop-categories button,
-    .cc-shop-categories a {
-        flex: 0 0 auto;
-        width: max-content;
-        max-width: none;
-        white-space: nowrap;
-        padding-left: 14px;
-        padding-right: 14px;
-        box-sizing: border-box;
-    }
-
-}
