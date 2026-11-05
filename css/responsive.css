@@ -21185,3 +21185,421 @@ html[data-theme="dark"] .cc-fit-fabric-button:hover {
         margin: 0 !important;
     }
 }
+
+/* HOME 1 BESTSELLERS - CARD PADDING FIX */
+
+.cc-home1-product-card {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cc-home1-product-details {
+    padding: 20px 22px 24px !important;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.cc-home1-product-category,
+.cc-home1-product-name,
+.cc-home1-product-rating,
+.cc-home1-product-price {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cc-home1-product-name {
+    margin: 10px 0;
+    overflow-wrap: break-word;
+}
+
+.cc-home1-product-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 18px !important;
+    margin-top: 18px;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.cc-home1-product-view span {
+    flex-shrink: 0;
+}
+/* =========================================
+   HOME 1 PROMO - RTL MODE
+========================================= */
+
+html[dir="rtl"] .cc-home1-promo {
+    direction: rtl;
+    background-position: left center;
+}
+
+html[dir="rtl"] .cc-home1-promo-container {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .cc-home1-promo-content {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+html[dir="rtl"] .cc-home1-promo-title,
+html[dir="rtl"] .cc-home1-promo-description {
+    text-align: right;
+}
+
+html[dir="rtl"] .cc-home1-promo-btn {
+    flex-direction: row-reverse;
+}
+
+/* =========================================
+   MOBILE RTL
+========================================= */
+
+@media (max-width: 767px) {
+
+    html[dir="rtl"] .cc-home1-promo {
+        background-position: left center;
+    }
+
+    html[dir="rtl"] .cc-home1-promo-content {
+        text-align: right;
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================
+   HOME 1 PROMO - RTL IMAGE & CONTENT
+========================================= */
+
+html[dir="rtl"] .cc-home1-promo {
+    background-image: none;
+    direction: rtl;
+}
+
+/* Mirror the banner image */
+
+html[dir="rtl"] .cc-home1-promo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background-image: url("../images/home1-promo-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+
+    transform: scaleX(-1);
+}
+
+/* Reverse overlay direction */
+
+html[dir="rtl"] .cc-home1-promo-overlay {
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        270deg,
+        rgba(45, 30, 33, 0.82) 0%,
+        rgba(45, 30, 33, 0.62) 45%,
+        rgba(45, 30, 33, 0.16) 100%
+    );
+}
+
+/* Move content to the right */
+
+html[dir="rtl"] .cc-home1-promo-container {
+    position: relative;
+    z-index: 2;
+}
+
+html[dir="rtl"] .cc-home1-promo-content {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+html[dir="rtl"] .cc-home1-promo-description {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+html[dir="rtl"] .cc-home1-promo-btn {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .cc-home1-promo-btn:hover span {
+    transform: translateX(-4px);
+}
+
+/* Sort dropdown arrow spacing */
+
+.cc-shop-products-sort select {
+    padding: 10px 38px 10px 14px !important;
+    background-position: right 14px center;
+    cursor: pointer;
+}
+
+/* RTL spacing */
+html[dir="rtl"] .cc-shop-products-sort select {
+    padding: 10px 14px 10px 38px !important;
+    background-position: left 14px center;
+}
+
+/* =====================================
+   SHOP SORT DROPDOWN - ARROW SPACING
+===================================== */
+
+.cc-shop-products-sort select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 10px 45px 10px 15px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23754C45' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+}
+
+/* RTL */
+
+html[dir="rtl"] .cc-shop-products-sort select {
+    padding: 10px 15px 10px 45px !important;
+    background-position: left 15px center;
+}
+
+/* =====================================
+   SHOP SORT - DARK MODE
+===================================== */
+
+html[data-theme="dark"] .cc-shop-products-sort select {
+    background-color: #2b2022 !important;
+    color: #ffffff !important;
+    border-color: #5a4144 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: right 14px center;
+
+    padding: 10px 42px 10px 15px !important;
+}
+
+/* DARK MODE + RTL */
+
+html[data-theme="dark"][dir="rtl"] .cc-shop-products-sort select {
+    direction: rtl;
+    text-align: right;
+    background-position: left 14px center;
+    padding: 10px 15px 10px 42px !important;
+}
+
+/* Dropdown options */
+
+html[data-theme="dark"] .cc-shop-products-sort select option {
+    background-color: #2b2022;
+    color: #ffffff;
+}
+
+/* =========================================
+   IPAD PRO - THREE CARDS IN ONE ROW
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cc-about-philosophy-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 35px;
+    }
+
+    /* Section heading */
+    .cc-about-philosophy-header {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Three cards in one row */
+    .cc-about-philosophy-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    /* Equal card heights */
+    .cc-about-philosophy-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+    }
+
+    .cc-about-philosophy-image-wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cc-about-philosophy-image {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .cc-about-philosophy-card-content {
+        flex: 1;
+        padding: 20px 16px;
+    }
+
+    .cc-about-philosophy-footer {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+/* =========================================
+   IPAD PRO - CENTER LAST TWO PRODUCT CARDS
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cc-shop-products-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .cc-shop-product-card {
+        grid-column: span 2;
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Center the final two cards */
+    .cc-shop-product-card:nth-child(7) {
+        grid-column: 2 / span 2;
+    }
+
+    .cc-shop-product-card:nth-child(8) {
+        grid-column: 4 / span 2;
+    }
+
+}
+
+/* =========================================
+   IPAD PRO – TWO CARDS PER ROW
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cc-bestsellers-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .cc-bestsellers-card {
+        width: 100%;
+        grid-column: auto;
+    }
+
+}
+
+/* =========================================
+   MOBILE - ONE PRODUCT PER ROW
+========================================= */
+
+@media (max-width: 599px) {
+
+    .cc-home1-products-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 28px !important;
+        width: 100%;
+    }
+
+    .cc-home1-product-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0;
+        grid-column: 1 / -1;
+    }
+
+    .cc-home1-product-image-wrap {
+        width: 100%;
+    }
+
+    .cc-home1-product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .cc-home1-product-details {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 599px) {
+
+    .cc-shop-categories {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        gap: 10px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0 16px 12px 4px;
+        margin-right: 0;
+
+        box-sizing: border-box;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cc-shop-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cc-shop-categories button,
+    .cc-shop-categories a {
+        flex: 0 0 auto;
+        width: max-content;
+        max-width: none;
+        white-space: nowrap;
+        padding-left: 14px;
+        padding-right: 14px;
+        box-sizing: border-box;
+    }
+
+}
